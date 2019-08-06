@@ -13,17 +13,17 @@ Peça ao usuário para informar um RA e exiba o nome do aluno associado
 '''
 from soupsieve.util import string
 
-user1 = input('Entre com o RGA do aluno 1: ')
-userName1 = string(input('Entre com nome do aluno 1: '))
+user1 = raw_input('Entre com o RGA do aluno 1: ')
+userName1 = raw_input('Entre com nome do aluno 1: ')
 
-user2 = input('Entre com o RGA do aluno 2: ')
-userName2 = string(input('Entre com nome do aluno 2: '))
+user2 = raw_input('Entre com o RGA do aluno 2: ')
+userName2 = raw_input('Entre com nome do aluno 2: ')
 
-user3 = input('Entre com o RGA do aluno 3: ')
-userName3 = string(input('Entre com nome do aluno 3: '))
+user3 = raw_input('Entre com o RGA do aluno 3: ')
+userName3 = raw_input('Entre com nome do aluno 3: ')
 
 students = {user1:userName1, user2:userName2, user3:userName3}
 
-find = input('Informe um RGA para buscar:')
+find = raw_input('Informe um RGA para buscar:')
 
 print('O aluno pesquisado é: {}'.format(students[find]))
